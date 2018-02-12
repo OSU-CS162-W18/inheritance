@@ -11,6 +11,11 @@ Employee::Employee(std::string name, int id, std::string title, float pay_rate, 
     this->email = email;
   }
 
+float Employee::get_pay_rate() {
+  return this->pay_rate;
+}
+
+
 float Employee::get_monthly_pay(float hours_worked) {
   return hours_worked * this->pay_rate;
 }
